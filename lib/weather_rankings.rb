@@ -16,5 +16,5 @@ end
 def rank_by_temp(array)
   hash = array_temp(array)
   answer = hash.sort_by { |key, value| value}
-  answer.keys.reverse
+  answer.map {|a| a[0].to_s}.reverse
 end
